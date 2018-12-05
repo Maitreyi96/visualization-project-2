@@ -136,7 +136,7 @@ function loaded(error, africa, data) {
 	// set up the first country shown using global country variable:
 	d3.select("path.countries#" + country).style("stroke", "gray");
 	d3.select("path.country#" + country).moveToFront();
-	d3.select(".subhead").html("Rate from 2000 to 2005 for " + "<span>" + countryById.get(country).country + "</span>");
+	d3.select(".subhead").html("Rate from 2000 to 2015 for " + "<span>" + countryById.get(country).country + "</span>");
 
 	/*map.select("#progress-image").remove();*/ // remove animation for loading
 }
