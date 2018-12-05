@@ -1,0 +1,295 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+
+
+* {
+  font-family: "Open Sans", sans-serif, sans-serif;
+}
+
+body {
+  font-size: 16px;
+  font-weight: 300;
+  color: rgb(30,31,29); /* dark grey */
+  padding: 0 0;
+  margin: 0 auto;
+}
+
+body h1, h2, h3 {
+  text-align: center;
+  line-height: 2;
+}
+
+body p, h4 {
+  text-align: center;
+  line-height: 2;
+}
+
+body h6 {
+  line-height: 1.5;
+}
+
+body h1, h2 {
+  color: rgb(24, 185, 185);
+}
+
+body  h3 {
+  color: rgba(169,169,169,0.9);
+}
+
+#container-fluid {
+  width: 90%;
+  max-width: 960px;
+  min-width: 370px;
+  padding: 0 0;
+  margin: 0 auto;
+}
+
+#space {
+  margin-top: 30px;
+}
+
+#intro-text {
+  max-width: 500px;
+}
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+h5 {
+  text-align: justify;
+  font-weight: 300;
+  margin-top: 5px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+h6,p {
+  text-align: justify;
+  font-weight: 300;
+  margin-top: 20px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+a, a:visited {
+  color: black;
+  text-decoration: none;
+  box-shadow: inset 0px -4px 0px 0px rgba(24, 185, 185,0.6); 
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+  box-shadow: inset 0px 0px 0px 15px rgba(24, 185, 185,0.6); 
+}
+
+.related_text {
+  font-size: 13px;
+  line-height: 1.5;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.intro {
+  position: absolute;
+  z-index: 10;
+  display: block;
+  width: 400px;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-top: 70px;
+  margin-left: 130px;
+  background-color: rgba(191,191,191,0.1);
+}
+
+.intro p {
+  text-align: center;
+  background-color: rgba(191,191,191,0.1);
+}
+
+/* code javascript */
+
+#form {
+      position: relative;
+      right: 10px;
+      top: 10px;
+      padding-bottom: 20px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: gray;
+  stroke-width: 0.7px;
+  stroke-opacity: 70%;
+  shape-rendering: crispEdges;
+}
+
+
+
+text {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 300;
+  font-size: 11px;
+  fill: rgba(136,136,136,1);
+
+}
+
+.legendLinear text {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 300;
+  font-size: 11px;
+  fill: rgba(136,136,136,1);
+
+}
+
+/*.x.axis path {
+  display: none;
+}*/
+
+.axis text {
+  font-family: "Times New Roman", Times, serif;;
+  font-size: 11px;
+  fill: rgba(140,140,140,1);
+  margin-right: 10px;
+}
+
+.dots {
+  opacity: 1;
+}
+
+body .tooltip_scatter {
+  position: absolute;
+  z-index: 10;
+  opacity:1;
+}
+
+body .tooltip_map {
+  position: absolute;
+  z-index: 10;
+  opacity:1;
+}
+
+.tooltip_map p {
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  line-height: 1.4;
+  color: black;
+  font-size: 13px;
+  background-color: rgba(255,255,255,0.9);
+  border: rgba(230,230,230,1) 1px solid;
+  padding: 5px 5px 5px 5px;
+}
+
+
+.tooltip_scatter p {
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  line-height: 1.4;
+  color: black;
+  font-size: 13px;
+  background-color: rgba(255,255,255,0.9);
+  border: rgba(230,230,230,1) 1px solid;
+  padding: 5px 5px 5px 5px;
+}
+
+button {
+  color: rgb(30,31,29);
+  cursor: pointer;
+  background: none;
+  display: block;
+  padding-top: 3px;
+  margin-top: 10px;
+  border-radius: 5px 5px 5px 5px;
+  outline: 0 !important;
+}
+
+.btn-sm {
+  color: rgb(30,31,29);
+  border: 1px solid grey;
+  outline: 0 !important;
+  padding: 6px;
+}
+
+#count {
+  border-radius: 5px 0px 0px 5px;
+}
+#name {
+  border-radius: 0px 5px 5px 0px;
+}
+
+/*map*/
+.countries {
+    stroke: #fff;
+    stroke-width: 1px;
+}
+
+path.line_graph2 {
+  fill: none;
+  stroke: rgb(153, 211, 212);
+  stroke-width: 2px;
+  stroke-opacity: 70%;
+}
+
+.line_graph2.normal {
+  fill: none;
+  stroke: rgb(153, 211, 212);
+}
+
+.background {
+  fill: #f9f9f9;
+}
+.area {
+  fill: #BFBFBF;
+  opacity: 0.5;
+}
+.line_small {
+  fill: none;
+  stroke: rgb(153, 211, 212);
+  stroke-width: 3.7px;
+}
+
+.chart {
+  float: left;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-top:0;
+  padding-left:0;
+}
+
+.bar {
+  opacity: 0.9;
+}
+
+span {
+  color: rgb(153, 211, 212);
+  font-weight: 600;
+}
+
+.selected {
+  background-color: rgba(153, 211, 212,0.5);
+  border: 1px solid white;
+  outline: 0 !important;
+}
+
+#menu select {
+   font-size: 12px;
+   color: black;
+   height: 25px;
+   padding: 4px;
+   line-height: 1;
+   cursor: pointer;
+   background: none;
+   border: 1px solid grey;
+   border-radius: 5px 5px 5px 5px;
+   outline: 0 !important;
+}
+
+/* end css javascript */
