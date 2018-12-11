@@ -5,9 +5,7 @@
   var width = 300 - margin.left - margin.right;
   var height = 300 - margin.top - margin.bottom;
 
-  /*var margin = {top: 15, right: 20, bottom: 40, left: 40};
-  var width = 150 - margin.left - margin.right;
-  var height = 150 - margin.top - margin.bottom;*/
+
 
   var data = [];
   var circle = null;
@@ -117,17 +115,17 @@ d3.csv("data/africa-data.csv", function(error, rawData) {
 
 
   draw_mults(rawData, "diarrhoeal_diseases");
-  /*setupIsotope();*/
+  
   $("#graph1").isotope({
     sortBy: 'count'
   });
 
   d3.select("#respiratory").on("click", function() {
 
-     /* draw_mults(rawData, "respiratory_infections");
+     draw_mults(rawData, "respiratory_infections");
       $("#graph1").isotope({
         sortBy: 'count'
-     });*/
+     });
 
      button
      			var thisButton = d3.select(this);
@@ -136,21 +134,73 @@ d3.csv("data/africa-data.csv", function(error, rawData) {
 
     });
 
+  d3.select("#hiv").on("click", function() {
+
+     draw_mults(rawData, "hiv");
+      $("#graph1").isotope({
+        sortBy: 'count'
+     });
+
+     button
+          var thisButton = d3.select(this);
+              d3.selectAll("button").classed("selected", false);
+              thisButton.classed("selected", true);
+
+    });
+
+  d3.select("#malaria").on("click", function() {
+
+     draw_mults(rawData, "malaria");
+      $("#graph1").isotope({
+        sortBy: 'count'
+     });
+
+     button
+          var thisButton = d3.select(this);
+              d3.selectAll("button").classed("selected", false);
+              thisButton.classed("selected", true);
+
+    });
+  d3.select("#prematurity").on("click", function() {
+
+     draw_mults(rawData, "prematurity");
+      $("#graph1").isotope({
+        sortBy: 'count'
+     });
+
+     button
+          var thisButton = d3.select(this);
+              d3.selectAll("button").classed("selected", false);
+              thisButton.classed("selected", true);
+
+    });
+
+
   d3.select("#diarrhoea").on("click", function() {
 
       draw_mults(rawData, "diarrhoeal_diseases");
-      //$("#graph1").isotope({
-     //   sortBy: 'count'
-      //});
+      
     button
       	var thisButton = d3.select(this);
       		  d3.selectAll("button").classed("selected", false);
       			thisButton.classed("selected", true);
 
 
-  }); // end onclick
+  }); 
 
+d3.select("#respiratory").on("click", function() {
 
+     draw_mults(rawData, "respiratory_infections");
+      $("#graph1").isotope({
+        sortBy: 'count'
+     });
+
+     button
+          var thisButton = d3.select(this);
+              d3.selectAll("button").classed("selected", false);
+              thisButton.classed("selected", true);
+
+    });
 
 });
 
@@ -158,9 +208,7 @@ function draw_mults(rawData, illness) {
 
   d3.selectAll(".chart").remove();
 
-  // d3.select("#graph1").selectAll("path.area").remove();
-  // d3.select("#graph1").selectAll("path.line_small").remove();
-  // d3.select("#graph1").selectAll(".yaxis").remove();
+  
 
   var data = transformData(rawData, illness);
 
@@ -263,15 +311,7 @@ function draw_mults(rawData, illness) {
      year = xScale.invert(d3.mouse(this)[0]).getFullYear();
      date = format.parse('' + year);
      index = 0;
-     //circle.attr("cx", xScale(date)).attr("cy", function(c) {
-     //index = bisect(c.values, date, 0, c.values.length - 0);
-     // return yScale(yValue(c.values[index]));
-     //});
-    // caption.attr("x", xScale(date)).attr("y", function(c) {
-      // return yScale(yValue(c.values[index]));
-     //}).text(function(c) {
-      // return yValue(c.values[index]);
-    // });
+     
      return curYear.attr("x", xScale(date)).text(year);
    };
 
@@ -284,7 +324,7 @@ function draw_mults(rawData, illness) {
 
 d3.select("button#diarrhoea").classed("selected", true);
    });
-} // end draw mults
+} 
 
 
 
