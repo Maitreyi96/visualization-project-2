@@ -6,7 +6,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Maitreyi Mokashi Documentation</title>
+	<title>Visualization Project 2 Documentation</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
@@ -41,67 +41,127 @@
 		<div class="content-wrap">
 			<section class="text-center">
 					<h1 class="h1 alt-font medium-weight em">
-						 <font face ='Times New Roman'>Maitreyi Mokashi Project1: Documentation Page</font>
+						 <font face ='Times New Roman'>Maitreyi Mokashi and Abhijeet Royala Project2: Documentation Page</font>
 					</h1>
 				</section>
 
 			<section id="next-section" class="section light-bg">
+            <div>
+			<li><a href="https://www.youtube.com/watch?v=AJX_5GxFX7Y&feature=youtu.be"><font face = "Times New Roman">Go to Youtube Video</font></a></div></br>
 
-			<div align="center"><iframe width="800" height="413" src="https://www.youtube.com/embed/b_2G0cBMKAo" frameborder="0" allowfullscreen></iframe></div></br>
+			<li><a href="https://maitreyi96.github.io/visualization-project-2/new_index.html" target="_blank" title=""><font face = "Times New Roman">Back to Main Page</font></a></li>
 
-				
+       <div>
+		<h2><u>Motivation</u>:</h2>
+		<p>
+		Initially we went through different ideas of our project. In that process of searching we came across UNICEF webpage which has huge amount of useful data. Exploring different categories of data we found something related to child mortality rate spread across different regions of the world. We thought of working with this data-set for our visualization project because we all know that, death of child in very budding stages of life is pathetic. What motivated to choose this topic is that, through our visualization we thought, we could effectively communicate the core of the problem in terms on morality rate in this project.
+		</p>
+	</div>
 
-				</br></br></br><h3><font face="Times New Roman">Requirements and Deliverables:</h3>
-				<p style="text-align:justify; text-justify:inter-ideograph;"><h3>The requirements and deliverables can be found here:<a href="http://vis.ninja/teaching/2018/H517/project1/" target="_blank" title=""> H517 Visualization Design, Analysis and Evaluation/requirements and delivarables - Project 1</a></br></h3></font></p>
-				
+	<div>
 
-				<p style="text-align:justify; text-justify:inter-ideograph;"><font face = "Times New Roman">As the first step of this project, I thoroughly analysed the requirements and assessed the London Cholera Map designed by John Snow to get some idea about the layout of the map. </font></p>
+		Coming to the data sets we found most of our data from a very reliable source of UNICEF website. We worked with data sets like: </div>
+		<ul>
+			<div>
+		<li>africa-data.csv: which has information about infant mortality over the years ranging from 2000 to 2013 according various diseases like malaria, HIV etc. according to countries in Africa. We have used this CSV in our ‘DISEASE TRENDS’ chart of visualization.</li>
+		<li> infantmort.csv: This has information about country wise infant mortality rate occurred due to all the diseases combined for each year from 2000 to 20015. It includes about all the worldwide. We have used this CSV. In our choropleth map which interacts with the line chart beside it in our visualization.</li></div>
+		<div><li>totalinfant.csv: This file has same information as infantmort.csv but in a different format.</li></div>
+		<div><li>africa (topojson file):  This file is used to build the choropleth map of Africa in our visualization.</li></div>
+		</ul>
+		<div>
+		After going through the above data we came to a conclusion about the questions our data can answer. We thought we could make visualization that could answer all or at-least few questions of the following:</div>
+		<ol>
+		<li>what are all the areas where the infant mortality is high?</li>
+		<li>Which disease is causing more number of death In particular area?</li>
+		<li>What is the ranking of a particular country a according to the infant mortality rate according to different diseases.</li>
+		<li>What are the trends of the mortality due to a disease over years?</li>
+		</ol>
 
-			
+        <div>
+		<h2><u>Design process</u>:</h2>
+		<div class= "row">
+			<img src = "image1.png">&nbsp&nbsp
+			<img src = "image2.png">
+		</div>
 
-				<p style="text-align:justify; text-justify:inter-ideograph;"><font face = "Times New Roman">Then, I started with the plot of the static map and then proceeded to plot the pumps and deaths.</font> </p>
-
-				<p style="text-align:justify; text-justify:inter-ideograph;"><font face = "Times New Roman">This was followed by plotting the interactive line graph and legends.</font> </br></p>
-
-				<h3><font face = "Times New Roman">Color Choices for Map and Graph: </font></h3>
-				
-				<p style="text-align:justify; text-justify:inter-ideograph;"><font face = "Times New Roman">Up until I was introduced to this course, I was unaware about the  importance of COLOR. </font></br></p>
-				<p style="text-align:justify; text-justify:inter-ideograph;"><font face = "Times New Roman">The map initially displays death locations in white with black border. </font></p>
-				
-
-				<p style="text-align:justify; text-justify:inter-ideograph;"><font face = "Times New Roman"> The best way I thought of representing male and female is by standard blue for male and pink for female. </font></p>
-
-					<p style="text-align:justify; text-justify:inter-ideograph;"><font face = "Times New Roman">For symbolizing different age groups I decided to go for lighter to darker shades of violet. Lighest being for 0-1 year age group and the darkest for 80 years and above age group. </font></br></p>
-
-				
-
-				<h3><font face = "Times New Roman">Observations:</font></h3>
-				<p style="text-align:justify; text-justify:inter-ideograph;"><font face = "Times New Roman">We can observe that the largest number of victims are from the age group 80 years and above So, this epidemic affected this age group than the others and hence, have the least survival rate.</font></p>
-				
-				<p style="text-align:justify; text-justify:inter-ideograph;"><font face = "Times New Roman">We can also observe that there ahd been twice the number of deaths in age group 0-1year when compared to the remaining two groups combined.</font></p>
-				<p style="text-align:justify; text-justify:inter-ideograph;"><font face = "Times New Roman">The total number of female fatalities is approxiamtely equal to male fatalities. Therefore, immunity to this disease is not related to gender. </font></p>
-				
-				<p style="text-align:justify; text-justify:inter-ideograph;"><font face = "Times New Roman">The outbreak was dated on September 1st, but the actual timeline August 19 to September 29th. From the timeline we can note that there is a sharp increase in the number of deaths till 1st September and then a reduction. This shows that there were some positive measures taken to subdue this outbreak. </font></p>
-						
-			<li><a href="https://pages.github.iu.edu/mmokashi/maitreyimokashi/viz_final_trial.html" target="_blank" title=""><font face = "Times New Roman">Back to Main Page</font></a></li>
-			 <h4><font zsize = "2" color = "gray" face= "Comic sans-serif">Written by Maitreyi Mokashi - Visualization Design, Analysis and Evaluation Fall 2018</h4>
-			</br></p>
-										
-			</section>
-			
-		</div>		
-	</div>	
-</div> 
-	<a href="#0" class="go-top" title="back to top"><i class="fa fa-angle-up"></i></a>
-
-	<script src="js/jquery-1.12.4.min.js"></script>
-	<script src="js/plugins.js"></script> 
-	<script src="js/main.js"></script> 
+	    </div>
 	
-	
-	<script>
-		
-	</script>
-	
+		<bl>
+		<dt><h4>Questions</h4></dt>
+		<dd><li>We initially researched through our data to get insight of the information that we have in our data. Then we made some vague approximation of thee the questions our data could answer.</li></dd>
+		<dt><h4>Choropleth Map:<h4></dt>
+		<dd><li>Initially we thought we would make a choropleth map of entire World but we found that we did not have sufficient data to describe whole world in our data. Then we found from our that African and south Asian countries were mostly effected by theses diseases which cause deaths in children. So, we stepped down to make a choropleth of Africa alone as most of the data was found on UNICEF website.</li></dd>
+		<div class = "row">
+			<img src = "map_line.png">
+		</div>
+		<dt><h4>Interactive Line Graph:</h4></dt>
+		<dd><li>As we did in in our project_1 we wanted to make an interactive cart that interacts with our map. We were really confused, what to represent on our chart as it has to be same on the map too. After sepnding good amount of time we decided to represent the main issue “levels and trends in child mortality” in our main map and chart interacting with it. Brushing the map shows infant mortality rate of a country in year 2015 and clicking on particular country changes the interacting line chart and shows the trend of infant mortality rate over years.</li></dd>
+		<dd><li>We initially made bar graphs for this but we again changed it to line chart as the data is continuous over the years and line graph would make more sense for continuous type of data.</li></dd>
+		<dt><h4>Bar Chart of Top ten Countries:</h4></dt>
+		<dd><li>Then we made bar graphs taking the top 10 ranking countries in ascending order. Be added a drop-down menu bar which enables us to select particular disease to see the ranking and mortality rate of a particular country according to that disease. The choice was bar graph because the countries we categorical and bar charts represents them the best.</li></dd>
+		<dt><h4>line Charts of Trends in Diarrhoea:</h4></dt>
+		<div class="row">
+			<img src = "bar_graph.png">
+		</div>
+		<dd><li>To add to our visualization we added line chart showing the trends in various diseases which displays the trend chart of top ten countries side by side which make it easy to compare the trends of different countries. This also shows the year when we mouse-over any one of the chart.</li></dd>
+		</bl>
+
+	    
+
+
+	    <h2><u>Design Justification</u>:</h2>
+	    <p>
+	    we have mostly talked about the reason for choosing particular type of chart for particular data and the map in the above design process but we will still talk about the page lay out and positioning of the maps and charts in particular chats in this section.
+		</p>
+		<p>
+		We have positioned choropleth and interactive line chart at the top as it considers all the types of diseases that accounts for infant mortality, then we positioned bar charts showing deaths particular disease next as It shows the information at diseases level and we positioned line Charts of Trends in Diarrhoea at the last because it is the one of the major disease causing diseases in infants and it shows information only at single disease level. So the positioning is in such a way that broadest class of infant mortality is at the top of the page and a narrow class of disease level is next to it and final the most narrow or deeper class is of single disease is placed at the bottom of our visualization page.
+		</p>
+		While coming to answering the questions the,
+		<ul>
+		<li>Choropleth and line chart answers the first question of “Areas where infant mortality is high?”</li>
+		<li>Bar-graph answers “Which disease is causing more number of death In particular area?” and “Ranking of the country in particular disease”.</li>
+		<li>Last line chart answers “What are the trends of the mortality due to a disease over years”</li>
+		</ul>
+		<p>
+		We have included good amount of pictures CSS coding in our visualization apart from Java-script and D3 so that the page looks aesthetically good. We feel this attracts the a normal person to look more into the visualization than a normal which shows only the information. We also made sure that there is minimum scrolling necessary to navigate through the page and arranged similar or interactive aspects besides each other at same level.
+		</p>
+
+
+		<h2><u>Findings</u>:</h2>
+		<p>
+		We will try to describe our findings in terms of answering to the questions we initially posted.
+		</p>
+		<p>
+		Q1)	What are all the areas where the infant mortality is high?
+		</p>
+		<ul>
+		<li> To answer this question we can go to our choropleth map and move our mouse to a particular country of Africa to see the mortality rate or simply by seeing the map we can say that higher the intensity of color(blue) for a country higher is the infant mortality rate and vice versa.
+		<li> So from the map we can see that Angola, Chad, Central African Republic and Dem Rep Congo have highest infant mortality rate compared to other countries.</li>
+		</ul>
+
+		<p>
+		Q2)	Which disease is causing more number of death In particular area? What is the ranking of a particular country a according to the infant mortality rate according to different diseases?
+		</p>
+		<ul>
+		<li> To answer this question we can go to Bar Chart of Top ten Countries and select a particular disease we are interested in and we can see the bar graphs arranging them in the ascending order of their rank in that disease an we can also see the infant mortality rate of  that particular disease in that particular country at the tip of each bar.</li>
+		</ul>
+		<p>
+		Q3) What are the trends of the mortality due to a disease over years?
+		</p>
+		<ul>
+		<li> Since Diarrhoea was one of the major disease, causing deaths in infants we thought of digging down more into that. So seeing at the line Charts of Trends in Diarrhoea we can compare the trends of different countries at same time and we can also see the year at particular point on the line by moving the mouse tip on the line which reflects the year on x-axis.</li>
+		<li>From the graph we can say that Angola had effectively tackled the problem over the years and Somalia had actually the deaths due to this disease and we can also see sudden spikes in this disease during the year 2004 in countries like Somalia, South Sudan and Zambia.</li>
+		</ul>
+		<p>
+		The thing that Diarrhoea was the second most death causing disease was not mentioned anywhere in the data we found it unexpectedly from the second bar-graph, so that was the reason to dig deeper and provide exclusive graphs on that at the end of the visualization page.
+        </p>
+
+        <h2>Limitations:</h2>
+        <ul>
+        <li>We initially planned to do this project for the entire world but there were some issues with data and looked more complex than we thought and also there was the time factor.
+		<li>The other issue with the visualization of entire world was that there was lot of data which was needed to be cleaned before implementing.</li>
+		<li>We also wanted to link maternal mortality to our visualization because it was one of the important factor affecting child mortality but, it was like a project in itself, so we limited our projectto this.</li>
+		</ul>
+        <li><a href="https://maitreyi96.github.io/visualization-project-2/new_index.html" target="_blank" title=""><font face = "Times New Roman">Back to Main Page</font></a></li>
 </body>
 </html>
